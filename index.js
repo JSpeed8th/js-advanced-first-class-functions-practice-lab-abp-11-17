@@ -53,3 +53,13 @@ function totalRevenue(drivers) {
 
   return totalRevenue;
 };
+
+function averageRevenue(drivers) {
+  let totalRevenue = 0;
+  drivers.forEach(function (driver) {
+    totalRevenue += driver.revenue;
+    //returns average earned returned by each driver
+  })
+
+  return totalRevenue / 5;
+};
