@@ -30,7 +30,7 @@ return newArray;
 };
 
 function driversByName(drivers) {
-  const newArray = drivers.sort(function (name1, name2) {
+  const newArray = [...drivers].sort(function (name1, name2) {
     return name1.name.localeCompare(name2.name)
   })
   //returns a new array of `driver` objects sorted by their `name` attribute from A to Z
