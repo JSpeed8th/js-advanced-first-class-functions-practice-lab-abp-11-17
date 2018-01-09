@@ -30,7 +30,9 @@ return newArray;
 };
 
 function driversByName(drivers) {
-  const newArray = drivers.name.sort()
+  const newArray = [...drivers['name']].sort(function (name1, name2) {
+    
+  })
   //returns a new array of `driver` objects sorted by their `name` attribute from A to Z
   return newArray;
 };
