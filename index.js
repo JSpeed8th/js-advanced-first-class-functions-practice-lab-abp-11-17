@@ -17,7 +17,7 @@ function logDriversByHometown (drivers, location) {
 };
 
 function driversByRevenue(drivers) {
-  const newDriver = [...drivers].sort(function (rev1, rev2) {
+  const newArray = [...drivers].sort(function (rev1, rev2) {
     let returnUni = rev1.revenue - rev2.revenue;
     if (returnUni < 0) {
 
@@ -26,5 +26,12 @@ function driversByRevenue(drivers) {
       return 1;
     }
 })
-return newDriver;
+return newArray;
+};
+
+function driversByName(drivers) {
+  const newArray = [...drivers].sort(function (name1, name2){
+    return newArray;
+  })
+  //returns a new array of `driver` objects sorted by their `name` attribute from A to Z
 };
