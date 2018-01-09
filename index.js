@@ -36,3 +36,13 @@ function driversByName(drivers) {
   //returns a new array of `driver` objects sorted by their `name` attribute from A to Z
   return newArray;
 };
+
+function totalRevenue(drivers) {
+  let counter = 0;
+  drivers.forEach(function (el, i, arr){
+    return el.revenue += counter;
+    //returns sum of Revenue.
+  })
+
+  return counter;
+};
